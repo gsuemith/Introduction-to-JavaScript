@@ -124,7 +124,7 @@ function hungryDog(weight, age/*add your code here*/){
 
     if (age < 1){
       if ( age < 2/12 ){
-        console.log("Your puppy is two young to feed.")
+        console.log("Your puppy is too young to feed.")
       }
       else if (age < 4/12)
         food = .1 * weight;
@@ -175,7 +175,7 @@ function game(user, computer){
     /*add your code here*/
     let win = false;
 
-    if(user == computer)
+    if(user === computer)
       return "it's a tie";
 
     if(user === 'paper'){
@@ -191,7 +191,7 @@ function game(user, computer){
         win = true;
     }
 
-    return win ? "you win!":"you lose!";
+    return win ? "you win!":"you lose!"
 }
   
   
